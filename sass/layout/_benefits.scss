@@ -8,13 +8,21 @@
     justify-content: space-between;
     align-items: center;
 
+    @include tablet{
+    flex-direction: row;
+    }
+
     @include desktop{
-        flex-direction: row;;
+        
     }
 } 
 
 &__item {
     width: 450px;
+
+    @include tablet{
+        width: 354px;
+    }
 
     @include desktop{
      width: 270px;   
@@ -33,6 +41,10 @@
     margin-right: auto;
     margin-left: auto; 
     text-align: center;
+
+    @include tablet {
+            text-align: start;
+        }
 
     @include desktop{
       text-align: start;  
@@ -54,9 +66,12 @@
     display: flex;
     margin-bottom: 30px;
 
+    @include tablet {
+        width: 354px;
+    }
+
     @include desktop{
     width: 270px;
-    height: 120px;
     }
 }
 

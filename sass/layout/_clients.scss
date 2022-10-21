@@ -33,6 +33,10 @@
     justify-content: center;  
     align-items: center;
 
+    @include tablet{
+    width: 226px;
+    }
+
     @include desktop{      
     margin: auto;
     width: 170px;

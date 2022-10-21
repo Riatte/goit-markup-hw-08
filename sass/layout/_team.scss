@@ -18,10 +18,16 @@
     }
 }
 
-.team-section .list {
+.team-list {
     display: flex;
     gap: 30px;
-    flex-direction: column;;
+    flex-direction: column;
+
+    @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }
 
     @include desktop{
     flex-direction: row;
@@ -35,6 +41,10 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
+    @include tablet {
+            width: 354px;
+        }
+
     @include desktop{
         width: 270px;
     }
@@ -43,6 +53,11 @@
 .member .img {
     margin-bottom: 30px;
     width: 450px;
+
+    @include tablet {
+        width: 354px;
+    }
+
     @include desktop{
         width: 270px;
     }
@@ -71,6 +86,7 @@
     margin-left: 122px;
     margin-right: 122px;
     margin-bottom: 24px;
+
 
     @include desktop{
     margin-bottom: 30px;

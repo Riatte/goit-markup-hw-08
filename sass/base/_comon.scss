@@ -41,7 +41,12 @@ img {
     margin-left: 15px;
     margin-right: 15px;
 
-    // outline: 2px solid red;
+    //  outline: 2px solid red;
+
+    @include tablet{
+    width: 738px;
+    margin: 0 auto;
+    }
 
     @include desktop{
     width: 1200px;
@@ -56,6 +61,7 @@ img {
     padding-top: 60px;
     padding-bottom: 60px;
     // outline: 2px solid red;
+
 
     @include desktop{
     padding-top: 94px;

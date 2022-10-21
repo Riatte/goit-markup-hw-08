@@ -17,6 +17,17 @@
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-mobile-2x.jpg);
     }
 
+    @include tablet{
+    max-width: 768px;
+
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
+        
+        @include retina {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet-2x.jpg);
+            }
+}
+
+
 
     @include desktop{
     height: 600px;
@@ -39,6 +50,10 @@
     text-transform: uppercase;
     color: getColor('white-color');
 
+    @include tablet{
+
+    }
+
     @include desktop{
     margin-bottom: 30px;
     max-width: 696px;
@@ -51,6 +66,7 @@
 
     display: flex;
     margin-right: auto;
+    margin-left: auto;
     text-align: center;
 
     font-family: inherit;
@@ -59,7 +75,7 @@
     line-height: 1.9;
 
     width: 200;    
-    margin-left: auto;
+    
     border-radius: 4px;
     padding: 10px 24px;
 

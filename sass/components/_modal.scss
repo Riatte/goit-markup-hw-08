@@ -71,12 +71,18 @@
 .form-head {
     @include font(700, 20px);
    
-    line-height: calc(23/20);
+    line-height: calc(30/20);
     text-align: center;
     letter-spacing: 0.03em;
     color: getColor('primary-text-color');
     text-align: center;
     margin-bottom: 12px;
+
+    @include desktop{
+
+    @include font(700, 20px);
+    line-height: calc(23/20);
+    }
 }
 
 .form-element {

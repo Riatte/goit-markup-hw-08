@@ -1,0 +1,48 @@
+.service {
+    display: none;
+
+    padding-top: 0;
+
+    @include desktop{
+    display: block;
+    }
+
+    
+    &__heading {
+    margin-bottom: 50px;
+    @include font(700, 36px);
+    
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    
+}
+
+&__list {
+    display: flex;
+    gap: 30px;
+}
+
+&__wrap {
+    position: relative;
+}
+
+&__details {
+    @include font(700, 14px);
+    
+    line-height: calc(16/14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: getColor('white-color');
+    bottom: 0;
+
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background: getColor('backround-details');
+}
+}

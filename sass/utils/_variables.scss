@@ -1,0 +1,43 @@
+    $primary-text-color: #212121;
+    $focus-text-color: #2196F3;
+    $focus-button-color: #188CE8;
+    $tetriary-text-color: #757575;
+    $white-color: #FFFFFF;
+    $background-color: #2F303A;
+    $second-background-color: #F5F4FA;
+    $contact-address: rgba(255, 255, 255, 0.6);
+    $black-color: #000000;
+    $border-color: #ECECEC;
+    $second-border-color: #EEEEEE;
+    $third-border-color: #AFB1B8;
+    $contact-color: #43444D;
+    $background-hover: rgba(33, 150, 243, 0.9);
+    $backround-details: rgba(47, 48, 58, 0.8);
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color);
+}
+
+$colors: (
+        "primary-text-color": #212121,
+        "focus-text-color": #2196F3,
+        "focus-button-color": #188CE8,
+        "tetriary-text-color": #757575,
+        "white-color": #FFFFFF,       //primary-title-color
+        "background-color": #2F303A,
+        "second-background-color": #F5F4FA,
+        "contact-address": rgba(255, 255, 255, 0.6),
+        "black-color": #000000,     //logo-half-color
+        "border-color": #ECECEC,
+        "second-border-color": #EEEEEE,
+        "third-border-color": #AFB1B8,
+        "contact-color": #43444D,
+        "background-hover": rgba(33, 150, 243, 0.9),
+        "backround-details": rgba(47, 48, 58, 0.8)
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}

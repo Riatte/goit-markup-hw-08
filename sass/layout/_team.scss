@@ -1,0 +1,106 @@
+.team-section {
+    background-color: getColor('second-background-color');
+}
+
+.team-big-heading {
+    margin-bottom: 30px;
+    @include font(700, 28px);
+    
+    line-height: calc(33/28);
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    @include desktop{
+
+    margin-bottom: 50px;
+    @include font(700, 36px);
+    line-height: 1.2;
+    }
+}
+
+.team-section .list {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;;
+
+    @include desktop{
+    flex-direction: row;
+    }
+}
+
+.member {
+    width: 450px;
+    text-align: center;
+    background-color: getColor('white-color');
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @include desktop{
+        width: 270px;
+    }
+}
+
+.member .img {
+    margin-bottom: 30px;
+    width: 450px;
+    @include desktop{
+        width: 270px;
+    }
+}
+
+.team-headings {
+    margin-bottom: 10px;
+    @include font(500, 16px);
+    
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.team-paragraph {
+    margin-bottom: 16px;
+    @include font(400, 16px);
+    
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: getColor('tetriary-text-color');
+}
+
+.member .list {
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 122px;
+    margin-right: 122px;
+    margin-bottom: 24px;
+
+    @include desktop{
+    margin-bottom: 30px;
+}
+}
+
+
+.social-links-circl {
+    display: flex;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+}
+
+.social-links-icons {
+    fill: getColor('third-border-color');
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+
+.social-links-circl:hover,
+.social-links-circl:focus {
+    fill: getColor('white-color');
+    background-color: getColor('focus-text-color');
+}
+
+.social-links-circl:hover svg,
+.social-links-circl:focus svg {
+    fill: getColor('white-color');
+}

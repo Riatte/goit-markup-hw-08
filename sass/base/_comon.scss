@@ -65,6 +65,12 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
+@media screen and (max-width: 480px) {
+
+    min-width: 480px;
+
+}
 }
 
 .list {
@@ -86,19 +92,3 @@ img {
     margin: 0;
 }
 
-@media screen and (max-width: 480px) {
-    .container {
-        max-width: 480px;
-        margin: 0 auto;
-        padding-left: 15px;
-        padding-right: 15px;
-
-
-    }
-
-    .section {
-        padding-top: 94px;
-
-    }
-
-}

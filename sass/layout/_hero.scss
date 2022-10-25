@@ -1,6 +1,7 @@
 .hero {
     text-align: center;
     height: 400px;
+    min-width: 480px;
     max-width: 480px;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -94,4 +95,3 @@
     background-color: getColor('focus-button-color');
 }
 }
-

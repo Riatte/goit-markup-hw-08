@@ -91,6 +91,17 @@ img {
   margin: 0;
 }
 
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .section {
+    padding-top: 94px;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   color: var(--primary-text-color);
@@ -304,6 +315,7 @@ body {
 .hero {
   text-align: center;
   height: 400px;
+  min-width: 480px;
   max-width: 480px;
   padding-top: 118px;
   padding-bottom: 118px;

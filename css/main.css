@@ -376,6 +376,11 @@ body {
     line-height: 1.3636363636;
   }
 }
+@media screen and (max-width: 480px) {
+  .hero__title {
+    min-width: 480px;
+  }
+}
 .hero__button {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -411,6 +411,13 @@ body {
   background-color: #188CE8;
 }
 
+@media screen and (max-width: 480px) {
+  .hero .container {
+    margin: 0 auto;
+    min-width: 480px;
+  }
+}
+
 .benefits__list {
   display: -webkit-box;
   display: -ms-flexbox;

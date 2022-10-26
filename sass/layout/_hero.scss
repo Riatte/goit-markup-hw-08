@@ -104,3 +104,10 @@
     background-color: getColor('focus-button-color');
 }
 }
+
+.hero .container{
+    @media screen and (max-width: 480px) {
+        margin: 0 auto;
+            min-width: 480px;
+        }
+}

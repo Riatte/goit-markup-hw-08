@@ -499,7 +499,7 @@ body {
   color: #757575;
 }
 .benefits__elem {
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   background-color: #F5F4FA;
   border-radius: 4px;
@@ -510,12 +510,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .benefits__elem {
-    width: 354px;
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .benefits__elem {
-    width: 270px;
+    max-width: 270px;
   }
 }
 .benefits__icons {

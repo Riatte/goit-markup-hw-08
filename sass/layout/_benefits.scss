@@ -18,14 +18,14 @@
 } 
 
 &__item {
-    width: 450px;
+    max-width: 450px;
 
     @include tablet{
-        width: 354px;
+        max-width: 354px;
     }
 
     @include desktop{
-     width: 270px;   
+     max-width: 270px;   
     }
     
 }

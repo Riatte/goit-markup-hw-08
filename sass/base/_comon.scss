@@ -37,13 +37,15 @@ img {
 }
 
 .container {
-    width: 450px;
+    width: 480px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 
     //  outline: 2px solid red;
 
     @include tablet{
-    width: 738px;
+    width: 768px;
     margin: 0 auto;
     }
 
